@@ -21,7 +21,8 @@ func getNums(input string) (nums []int) {
 	return nums
 }
 
-// depthCompare
+// depthCompare comapres a depth value to the next in the slice
+// and sums the total
 func depthCompare(nums []int) (c int) {
 	for i := range nums {
 		if i == len(nums)-1 {
@@ -34,7 +35,8 @@ func depthCompare(nums []int) (c int) {
 	return c
 }
 
-// depthCompareWindow
+// depthCompareWindow compares the next three depth values with the
+// immediate next three depth values and returns the sum.
 func depthCompareWindow(nums []int) (c int) {
 	for i := range nums {
 		if i == len(nums)-3 {
